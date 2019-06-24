@@ -1588,3 +1588,13 @@ Cannot render console from 130.207.60.253! Allowed networks: 127.0.0.1, ::1, 127
 
 Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 130.207.60.253 at 2019-06-24 20:18:59 +0000
 Cannot render console from 130.207.60.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/1/body" for 130.207.60.253 at 2019-06-24 20:20:53 +0000
+Cannot render console from 130.207.60.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#body as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 27ms (Views: 7.1ms | ActiveRecord: 0.4ms)
